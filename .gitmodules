@@ -1,0 +1,3 @@
+[submodule "mw_parameters"]
+	path = mw_parameters
+	url = git@github.com:coxlab/mw_parameters.git
