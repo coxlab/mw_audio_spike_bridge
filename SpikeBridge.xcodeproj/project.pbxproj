@@ -304,8 +304,16 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SpikeBridge_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(MW_INCLUDE_DIR)",
+				);
 				INFOPLIST_FILE = "SpikeBridge-Info.plist";
 				INSTALL_PATH = "$(PLUGINS_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(MW_LIB_DIR)",
+				);
 				PRODUCT_NAME = SpikeBridge;
 				WRAPPER_EXTENSION = bundle;
 			};
