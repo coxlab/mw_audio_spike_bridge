@@ -10,7 +10,7 @@
 #include "SpikeBridge.h"
 #include "SpikeBridgePlugin.h"
 #include "MWorksCore/ComponentFactory.h"
-#include "SelfDescribingComponentFactory.h"
+#include "SelfDescribingComponent.h"
 
 
 using namespace mw;
@@ -25,6 +25,6 @@ void SpikeBridgePlugin::registerComponents(shared_ptr<mw::ComponentRegistry> reg
     std::string signature = SpikeBridge::parameters::getSignature();
     
     registry->registerFactory(signature,
-							  (ComponentFactory *)(new SelfDescribingStimulusFactory<SpikeBridge>()));
+							  (ComponentFactory *)(new SelfDescribingComponentFactory<SpikeBridge>()));
 }
 

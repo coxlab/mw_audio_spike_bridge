@@ -15,9 +15,12 @@
 #include <zmq.hpp>
 #include "mw_parameters.h"
 
+#include <boost/thread/mutex.hpp>
+#include <boost/enable_shared_from_this.hpp>
+
 using namespace mw;
 
-class SpikeBridge : public mw::IODevice {
+class SpikeBridge : public mw::IODevice, public boost::enable_shared_from_this<SpikeBridge> {
 
 public:
 
@@ -53,13 +56,16 @@ protected:
     zmq_pollitem_t *poll_items;
     
     int n_spike_channels;
+    
+    bool stopping;
+    boost::mutex stopping_mutex;
 
 public:
 	SpikeBridge(std::string _tag, std::string _url_root, shared_ptr<Variable> _spike_variable);
 	SpikeBridge(const SpikeBridge &tocopy);
 	~SpikeBridge();
     
-    virtual void pollForSpikes();
+    virtual void *pollForSpikes();
     
     virtual bool startDeviceIO();
     virtual bool stopDeviceIO();

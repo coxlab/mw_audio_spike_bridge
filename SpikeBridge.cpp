@@ -9,12 +9,14 @@
 
 #include "SpikeBridge.h"
 #include <boost/filesystem.hpp>
+#include <MWorksCore/Scheduler.h>
 
 namespace fs = boost::filesystem;
 
 SpikeBridge::SpikeBridge(std::string _tag, std::string _url_root, shared_ptr<Variable> _spike_var):
     spike_variable(_spike_var), 
-    message_ctx(1){ 
+    message_ctx(1),
+    stopping(false){ 
 
     
     // lookup which channels are defined in the _url_root
@@ -50,7 +52,8 @@ SpikeBridge::SpikeBridge(std::string _tag, std::string _url_root, shared_ptr<Var
 SpikeBridge::SpikeBridge(const SpikeBridge &tocopy) :
     spike_variable(tocopy.spike_variable),
     message_ctx(1),
-    n_spike_channels(tocopy.n_spike_channels){ 
+    n_spike_channels(tocopy.n_spike_channels),
+    stopping(false){ 
     
     sockets = tocopy.sockets;
     
@@ -62,7 +65,7 @@ SpikeBridge::SpikeBridge(const SpikeBridge &tocopy) :
 
 SpikeBridge::~SpikeBridge(){ }
 
-void SpikeBridge::pollForSpikes(){
+void *SpikeBridge::pollForSpikes(){
 
     shared_ptr<Clock> clock = Clock::instance();
     int rc;
@@ -71,6 +74,13 @@ void SpikeBridge::pollForSpikes(){
     
 
     while(1){
+    
+        boost::mutex::scoped_lock lock(stopping_mutex);
+        if(stopping){
+            break;
+        }
+    
+    
         /* Poll for events indefinitely */
         int rc = zmq::poll (poll_items, 2, -1);
         assert (rc >= 0);
@@ -86,4 +96,34 @@ void SpikeBridge::pollForSpikes(){
             }
         }
     }
+    
+    return NULL;
+    
 }    
+
+
+bool SpikeBridge::startDeviceIO(){
+
+    stopping = false;
+    shared_ptr<Scheduler> scheduler = Scheduler::instance();
+    
+    scheduler->scheduleUS(FILELINE,
+                          0, // delay
+                          0, // repeat interval
+                          1, // times to run
+                          boost::bind(&SpikeBridge::pollForSpikes, 
+                                      enable_shared_from_this<SpikeBridge>::shared_from_this()),
+                          M_DEFAULT_PRIORITY,
+                          (MWTime)0, // no timing warnings
+                          M_DEFAULT_NETWORK_FAIL_SLOP_MS,
+                          M_MISSED_EXECUTION_DROP);
+                        
+}
+
+bool SpikeBridge::stopDeviceIO(){
+
+    
+    boost::mutex::scoped_lock lock(stopping_mutex);
+    stopping = true;
+    
+}

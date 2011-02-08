@@ -33,28 +33,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5C182E641301ED9A00BEEB27 /* config in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E3A1301ED9A00BEEB27 /* config */; };
-		5C182E651301ED9A00BEEB27 /* description in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E3B1301ED9A00BEEB27 /* description */; };
-		5C182E661301ED9A00BEEB27 /* HEAD in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E3C1301ED9A00BEEB27 /* HEAD */; };
-		5C182E671301ED9A00BEEB27 /* applypatch-msg.sample in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E3E1301ED9A00BEEB27 /* applypatch-msg.sample */; };
-		5C182E681301ED9A00BEEB27 /* commit-msg.sample in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E3F1301ED9A00BEEB27 /* commit-msg.sample */; };
-		5C182E691301ED9A00BEEB27 /* post-commit.sample in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E401301ED9A00BEEB27 /* post-commit.sample */; };
-		5C182E6A1301ED9A00BEEB27 /* post-receive.sample in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E411301ED9A00BEEB27 /* post-receive.sample */; };
-		5C182E6B1301ED9A00BEEB27 /* post-update.sample in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E421301ED9A00BEEB27 /* post-update.sample */; };
-		5C182E6C1301ED9A00BEEB27 /* pre-applypatch.sample in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E431301ED9A00BEEB27 /* pre-applypatch.sample */; };
-		5C182E6D1301ED9A00BEEB27 /* pre-commit.sample in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E441301ED9A00BEEB27 /* pre-commit.sample */; };
-		5C182E6E1301ED9A00BEEB27 /* pre-rebase.sample in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E451301ED9A00BEEB27 /* pre-rebase.sample */; };
-		5C182E6F1301ED9A00BEEB27 /* prepare-commit-msg.sample in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E461301ED9A00BEEB27 /* prepare-commit-msg.sample */; };
-		5C182E701301ED9A00BEEB27 /* update.sample in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E471301ED9A00BEEB27 /* update.sample */; };
-		5C182E711301ED9A00BEEB27 /* index in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E481301ED9A00BEEB27 /* index */; };
-		5C182E721301ED9A00BEEB27 /* exclude in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E4A1301ED9A00BEEB27 /* exclude */; };
-		5C182E731301ED9A00BEEB27 /* HEAD in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E4C1301ED9A00BEEB27 /* HEAD */; };
-		5C182E741301ED9A00BEEB27 /* master in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E4F1301ED9A00BEEB27 /* master */; };
-		5C182E751301ED9A00BEEB27 /* pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.idx in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E531301ED9A00BEEB27 /* pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.idx */; };
-		5C182E761301ED9A00BEEB27 /* pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.pack in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E541301ED9A00BEEB27 /* pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.pack */; };
-		5C182E771301ED9A00BEEB27 /* packed-refs in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E551301ED9A00BEEB27 /* packed-refs */; };
-		5C182E781301ED9A00BEEB27 /* master in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E581301ED9A00BEEB27 /* master */; };
-		5C182E791301ED9A00BEEB27 /* HEAD in Resources */ = {isa = PBXBuildFile; fileRef = 5C182E5B1301ED9A00BEEB27 /* HEAD */; };
 		5C182E7A1301ED9A00BEEB27 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5C182E5D1301ED9A00BEEB27 /* Makefile */; };
 		5C182E7B1301ED9A00BEEB27 /* mw_conversion_helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C182E5F1301ED9A00BEEB27 /* mw_conversion_helpers.cpp */; };
 		5C182E7C1301ED9A00BEEB27 /* mw_parameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C182E611301ED9A00BEEB27 /* mw_parameters.cpp */; };
@@ -100,28 +78,6 @@
 
 /* Begin PBXFileReference section */
 		32DBCF630370AF2F00C91783 /* SpikeBridge_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeBridge_Prefix.pch; sourceTree = "<group>"; };
-		5C182E3A1301ED9A00BEEB27 /* config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config; sourceTree = "<group>"; };
-		5C182E3B1301ED9A00BEEB27 /* description */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description; sourceTree = "<group>"; };
-		5C182E3C1301ED9A00BEEB27 /* HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HEAD; sourceTree = "<group>"; };
-		5C182E3E1301ED9A00BEEB27 /* applypatch-msg.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "applypatch-msg.sample"; sourceTree = "<group>"; };
-		5C182E3F1301ED9A00BEEB27 /* commit-msg.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "commit-msg.sample"; sourceTree = "<group>"; };
-		5C182E401301ED9A00BEEB27 /* post-commit.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "post-commit.sample"; sourceTree = "<group>"; };
-		5C182E411301ED9A00BEEB27 /* post-receive.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "post-receive.sample"; sourceTree = "<group>"; };
-		5C182E421301ED9A00BEEB27 /* post-update.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "post-update.sample"; sourceTree = "<group>"; };
-		5C182E431301ED9A00BEEB27 /* pre-applypatch.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "pre-applypatch.sample"; sourceTree = "<group>"; };
-		5C182E441301ED9A00BEEB27 /* pre-commit.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "pre-commit.sample"; sourceTree = "<group>"; };
-		5C182E451301ED9A00BEEB27 /* pre-rebase.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "pre-rebase.sample"; sourceTree = "<group>"; };
-		5C182E461301ED9A00BEEB27 /* prepare-commit-msg.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "prepare-commit-msg.sample"; sourceTree = "<group>"; };
-		5C182E471301ED9A00BEEB27 /* update.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update.sample; sourceTree = "<group>"; };
-		5C182E481301ED9A00BEEB27 /* index */ = {isa = PBXFileReference; lastKnownFileType = file; path = index; sourceTree = "<group>"; };
-		5C182E4A1301ED9A00BEEB27 /* exclude */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = exclude; sourceTree = "<group>"; };
-		5C182E4C1301ED9A00BEEB27 /* HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HEAD; sourceTree = "<group>"; };
-		5C182E4F1301ED9A00BEEB27 /* master */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = master; sourceTree = "<group>"; };
-		5C182E531301ED9A00BEEB27 /* pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.idx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.idx"; sourceTree = "<group>"; };
-		5C182E541301ED9A00BEEB27 /* pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.pack"; sourceTree = "<group>"; };
-		5C182E551301ED9A00BEEB27 /* packed-refs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "packed-refs"; sourceTree = "<group>"; };
-		5C182E581301ED9A00BEEB27 /* master */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = master; sourceTree = "<group>"; };
-		5C182E5B1301ED9A00BEEB27 /* HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HEAD; sourceTree = "<group>"; };
 		5C182E5D1301ED9A00BEEB27 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		5C182E5E1301ED9A00BEEB27 /* mw_abbreviations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mw_abbreviations.h; sourceTree = "<group>"; };
 		5C182E5F1301ED9A00BEEB27 /* mw_conversion_helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mw_conversion_helpers.cpp; sourceTree = "<group>"; };
@@ -129,6 +85,7 @@
 		5C182E611301ED9A00BEEB27 /* mw_parameters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mw_parameters.cpp; sourceTree = "<group>"; };
 		5C182E621301ED9A00BEEB27 /* mw_parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mw_parameters.h; sourceTree = "<group>"; };
 		5C182E631301ED9A00BEEB27 /* mw_parameters_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mw_parameters_macros.h; sourceTree = "<group>"; };
+		5C182E8F1301EF9700BEEB27 /* SelfDescribingComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfDescribingComponent.h; sourceTree = "<group>"; };
 		5C78EE6B115D02EE00151A76 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = "/Library/Application Support/MWorks/Developer/Xcode/Development.xcconfig"; sourceTree = "<absolute>"; };
 		5C78EE6C115D02EE00151A76 /* WARNING.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = WARNING.txt; path = "/Library/Application Support/MWorks/Developer/Xcode/WARNING.txt"; sourceTree = "<absolute>"; };
 		5CF9AEB90FD5795C00F405F6 /* SpikeBridgePlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeBridgePlugin.cpp; sourceTree = SOURCE_ROOT; };
@@ -238,7 +195,7 @@
 		5C182E381301ED9A00BEEB27 /* mw_parameters */ = {
 			isa = PBXGroup;
 			children = (
-				5C182E391301ED9A00BEEB27 /* .git */,
+				5C182E8F1301EF9700BEEB27 /* SelfDescribingComponent.h */,
 				5C182E5D1301ED9A00BEEB27 /* Makefile */,
 				5C182E5E1301ED9A00BEEB27 /* mw_abbreviations.h */,
 				5C182E5F1301ED9A00BEEB27 /* mw_conversion_helpers.cpp */,
@@ -248,139 +205,6 @@
 				5C182E631301ED9A00BEEB27 /* mw_parameters_macros.h */,
 			);
 			path = mw_parameters;
-			sourceTree = "<group>";
-		};
-		5C182E391301ED9A00BEEB27 /* .git */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E3A1301ED9A00BEEB27 /* config */,
-				5C182E3B1301ED9A00BEEB27 /* description */,
-				5C182E3C1301ED9A00BEEB27 /* HEAD */,
-				5C182E3D1301ED9A00BEEB27 /* hooks */,
-				5C182E481301ED9A00BEEB27 /* index */,
-				5C182E491301ED9A00BEEB27 /* info */,
-				5C182E4B1301ED9A00BEEB27 /* logs */,
-				5C182E501301ED9A00BEEB27 /* objects */,
-				5C182E551301ED9A00BEEB27 /* packed-refs */,
-				5C182E561301ED9A00BEEB27 /* refs */,
-			);
-			path = .git;
-			sourceTree = "<group>";
-		};
-		5C182E3D1301ED9A00BEEB27 /* hooks */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E3E1301ED9A00BEEB27 /* applypatch-msg.sample */,
-				5C182E3F1301ED9A00BEEB27 /* commit-msg.sample */,
-				5C182E401301ED9A00BEEB27 /* post-commit.sample */,
-				5C182E411301ED9A00BEEB27 /* post-receive.sample */,
-				5C182E421301ED9A00BEEB27 /* post-update.sample */,
-				5C182E431301ED9A00BEEB27 /* pre-applypatch.sample */,
-				5C182E441301ED9A00BEEB27 /* pre-commit.sample */,
-				5C182E451301ED9A00BEEB27 /* pre-rebase.sample */,
-				5C182E461301ED9A00BEEB27 /* prepare-commit-msg.sample */,
-				5C182E471301ED9A00BEEB27 /* update.sample */,
-			);
-			path = hooks;
-			sourceTree = "<group>";
-		};
-		5C182E491301ED9A00BEEB27 /* info */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E4A1301ED9A00BEEB27 /* exclude */,
-			);
-			path = info;
-			sourceTree = "<group>";
-		};
-		5C182E4B1301ED9A00BEEB27 /* logs */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E4C1301ED9A00BEEB27 /* HEAD */,
-				5C182E4D1301ED9A00BEEB27 /* refs */,
-			);
-			path = logs;
-			sourceTree = "<group>";
-		};
-		5C182E4D1301ED9A00BEEB27 /* refs */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E4E1301ED9A00BEEB27 /* heads */,
-			);
-			path = refs;
-			sourceTree = "<group>";
-		};
-		5C182E4E1301ED9A00BEEB27 /* heads */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E4F1301ED9A00BEEB27 /* master */,
-			);
-			path = heads;
-			sourceTree = "<group>";
-		};
-		5C182E501301ED9A00BEEB27 /* objects */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E511301ED9A00BEEB27 /* info */,
-				5C182E521301ED9A00BEEB27 /* pack */,
-			);
-			path = objects;
-			sourceTree = "<group>";
-		};
-		5C182E511301ED9A00BEEB27 /* info */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = info;
-			sourceTree = "<group>";
-		};
-		5C182E521301ED9A00BEEB27 /* pack */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E531301ED9A00BEEB27 /* pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.idx */,
-				5C182E541301ED9A00BEEB27 /* pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.pack */,
-			);
-			path = pack;
-			sourceTree = "<group>";
-		};
-		5C182E561301ED9A00BEEB27 /* refs */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E571301ED9A00BEEB27 /* heads */,
-				5C182E591301ED9A00BEEB27 /* remotes */,
-				5C182E5C1301ED9A00BEEB27 /* tags */,
-			);
-			path = refs;
-			sourceTree = "<group>";
-		};
-		5C182E571301ED9A00BEEB27 /* heads */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E581301ED9A00BEEB27 /* master */,
-			);
-			path = heads;
-			sourceTree = "<group>";
-		};
-		5C182E591301ED9A00BEEB27 /* remotes */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E5A1301ED9A00BEEB27 /* origin */,
-			);
-			path = remotes;
-			sourceTree = "<group>";
-		};
-		5C182E5A1301ED9A00BEEB27 /* origin */ = {
-			isa = PBXGroup;
-			children = (
-				5C182E5B1301ED9A00BEEB27 /* HEAD */,
-			);
-			path = origin;
-			sourceTree = "<group>";
-		};
-		5C182E5C1301ED9A00BEEB27 /* tags */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = tags;
 			sourceTree = "<group>";
 		};
 		5C78EE69115D02C700151A76 /* External Config */ = {
@@ -464,28 +288,6 @@
 				5CFCAB0A1105FB4C007CE55F /* MWLibrary.xml in Resources */,
 				5CFCAB0D1105FCF2007CE55F /* Development Notes.txt in Resources */,
 				5CFCAB26110609D2007CE55F /* UserDocumentation.rst in Resources */,
-				5C182E641301ED9A00BEEB27 /* config in Resources */,
-				5C182E651301ED9A00BEEB27 /* description in Resources */,
-				5C182E661301ED9A00BEEB27 /* HEAD in Resources */,
-				5C182E671301ED9A00BEEB27 /* applypatch-msg.sample in Resources */,
-				5C182E681301ED9A00BEEB27 /* commit-msg.sample in Resources */,
-				5C182E691301ED9A00BEEB27 /* post-commit.sample in Resources */,
-				5C182E6A1301ED9A00BEEB27 /* post-receive.sample in Resources */,
-				5C182E6B1301ED9A00BEEB27 /* post-update.sample in Resources */,
-				5C182E6C1301ED9A00BEEB27 /* pre-applypatch.sample in Resources */,
-				5C182E6D1301ED9A00BEEB27 /* pre-commit.sample in Resources */,
-				5C182E6E1301ED9A00BEEB27 /* pre-rebase.sample in Resources */,
-				5C182E6F1301ED9A00BEEB27 /* prepare-commit-msg.sample in Resources */,
-				5C182E701301ED9A00BEEB27 /* update.sample in Resources */,
-				5C182E711301ED9A00BEEB27 /* index in Resources */,
-				5C182E721301ED9A00BEEB27 /* exclude in Resources */,
-				5C182E731301ED9A00BEEB27 /* HEAD in Resources */,
-				5C182E741301ED9A00BEEB27 /* master in Resources */,
-				5C182E751301ED9A00BEEB27 /* pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.idx in Resources */,
-				5C182E761301ED9A00BEEB27 /* pack-1135d4f2fa15160dc849f92aa98a41d6c20fa1c2.pack in Resources */,
-				5C182E771301ED9A00BEEB27 /* packed-refs in Resources */,
-				5C182E781301ED9A00BEEB27 /* master in Resources */,
-				5C182E791301ED9A00BEEB27 /* HEAD in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +338,7 @@
 					/usr/local/lib,
 					"$(MW_LIB_DIR)",
 				);
+				OTHER_LDFLAGS = "-lzmq";
 				PRODUCT_NAME = SpikeBridge;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -550,6 +353,59 @@
 				PREBINDING = NO;
 			};
 			name = Development;
+		};
+		5C182ED11301F7B300BEEB27 /* Development (x86_64 only) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C78EE6B115D02EE00151A76 /* Development.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				HEADER_SEARCH_PATHS = "$(MW_INCLUDE_DIR)";
+				LIBRARY_SEARCH_PATHS = "$(MW_LIB_DIR)";
+				PREBINDING = NO;
+			};
+			name = "Development (x86_64 only)";
+		};
+		5C182ED21301F7B300BEEB27 /* Development (x86_64 only) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpikeBridge_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(MW_INCLUDE_DIR)",
+				);
+				INFOPLIST_FILE = "SpikeBridge-Info.plist";
+				INSTALL_PATH = "$(PLUGINS_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(MW_LIB_DIR)",
+				);
+				OTHER_LDFLAGS = "-lzmq";
+				PRODUCT_NAME = SpikeBridge;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = "Development (x86_64 only)";
+		};
+		5C182ED31301F7B300BEEB27 /* Development (x86_64 only) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Install;
+			};
+			name = "Development (x86_64 only)";
+		};
+		5C182ED41301F7B300BEEB27 /* Development (x86_64 only) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Everything;
+			};
+			name = "Development (x86_64 only)";
 		};
 		5CFCAB1F11060986007CE55F /* Development */ = {
 			isa = XCBuildConfiguration;
@@ -578,6 +434,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913B08733D840010E9CD /* Development */,
+				5C182ED21301F7B300BEEB27 /* Development (x86_64 only) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
@@ -586,6 +443,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913F08733D840010E9CD /* Development */,
+				5C182ED11301F7B300BEEB27 /* Development (x86_64 only) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
@@ -594,6 +452,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CFCAB1F11060986007CE55F /* Development */,
+				5C182ED41301F7B300BEEB27 /* Development (x86_64 only) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
@@ -602,6 +461,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E12A26F91201E2FB00CE8C55 /* Development */,
+				5C182ED31301F7B300BEEB27 /* Development (x86_64 only) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
