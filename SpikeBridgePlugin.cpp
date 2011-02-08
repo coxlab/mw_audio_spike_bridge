@@ -7,9 +7,12 @@
  *
  */
 
+#include "SpikeBridge.h"
 #include "SpikeBridgePlugin.h"
-#include "SpikeBridgeFactory.h"
 #include "MWorksCore/ComponentFactory.h"
+#include "SelfDescribingComponentFactory.h"
+
+
 using namespace mw;
 
 Plugin *getPlugin(){
@@ -19,9 +22,9 @@ Plugin *getPlugin(){
 
 void SpikeBridgePlugin::registerComponents(shared_ptr<mw::ComponentRegistry> registry) {
 	
-    // TODO: you need to customize the "signature" of the object your plugin will create
-    //       The signature is of the form component/type Ð(e.g. stimulus/circle, or iodevice/NIDAQ)
-    registry->registerFactory(std::string("stimulus/SpikeBridge"),
-							  (ComponentFactory *)(new SpikeBridgeFactory()));
+    std::string signature = SpikeBridge::parameters::getSignature();
+    
+    registry->registerFactory(signature,
+							  (ComponentFactory *)(new SelfDescribingStimulusFactory<SpikeBridge>()));
 }
 

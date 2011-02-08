@@ -13,10 +13,34 @@
 #include <MWorksCore/Plugin.h>
 #include <MWorksCore/IODevice.h>
 #include <zmq.hpp>
+#include "mw_parameters.h"
 
 using namespace mw;
 
 class SpikeBridge : public mw::IODevice {
+
+public:
+
+    // -----------------------------------------------------------------------
+    BEGIN_MW_PARAMETERS
+    
+    MW_SIGNATURE("iodevice/spike_bridge");
+    
+    MW_PARAMETER(tag,               string,           "Spike Bridge");
+    MW_PARAMETER(spike_variable,    VariablePtr,      "spike");
+    MW_PARAMETER(spike_path,        string,           "/tmp/spike_channels");
+    
+    END_MW_PARAMETERS
+    
+    static shared_ptr<Component> createComponent(MW_PARAMETERS p){
+        SpikeBridge *bridge = new SpikeBridge(p->tag,
+                                                  p->spike_path,
+                                                  p->spike_variable);
+        shared_ptr<SpikeBridge> b(bridge);
+        return b;
+    }   
+    // -----------------------------------------------------------------------
+
 
 protected:
 
