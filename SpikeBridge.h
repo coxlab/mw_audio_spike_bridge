@@ -18,9 +18,11 @@
 #include <boost/thread/mutex.hpp>
 #include <boost/enable_shared_from_this.hpp>
 
+#include <boost/filesystem.hpp>
+
 using namespace mw;
 
-class SpikeBridge : public mw::IODevice, public boost::enable_shared_from_this<SpikeBridge> {
+class SpikeBridge : public mw::IODevice {
 
 public:
 
@@ -59,6 +61,10 @@ protected:
     
     bool stopping;
     boost::mutex stopping_mutex;
+    
+    vector<boost::filesystem::path> channel_paths;
+    
+    void initSockets(zmq::context_t& message_ctx);
 
 public:
 	SpikeBridge(std::string _tag, std::string _url_root, shared_ptr<Variable> _spike_variable);
